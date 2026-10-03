@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth bg-white text-gray-900">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open People — Livret Officiel</title>
+    <!-- Tailwind CSS pour les utilitaires de disposition -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Polices éditoriales élégantes type livre -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .font-serif-book {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+        }
+
+        /* Animation en cascade fluide au défilement haut / bas */
+        .cascade-element {
+            opacity: 0;
+            transform: translateY(35px);
+            transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .cascade-element.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Délais séquentiels pour l'effet cascade */
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.25s; }
+        .delay-3 { transition-delay: 0.4s; }
+        .delay-4 { transition-delay: 0.55s; }
+
+        /* Style cadre livre éditorial */
+        .book-section {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Contour subtil de page */
+        .page-border {
+            border: 1px solid #f0f0f0;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 selection:bg-gray-100">
+
+    <!-- Chapitre I : Open People -->
+    <section class="book-section py-20 px-6 md:px-16 lg:px-24 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <!-- Texte à gauche -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="cascade-element delay-1">
+                    <span class="text-xs font-mono uppercase tracking-widest text-gray-400">Chapitre I</span>
+                    <h1 class="font-serif-book text-4xl sm:text-5xl lg:text-6xl text-gray-900 font-normal leading-tight mt-2">
+                        Le Projet <span class="italic">Open People</span>
+                    </h1>
+                </div>
+
+                <div class="cascade-element delay-2 text-gray-600 text-base sm:text-lg leading-relaxed space-y-4 font-light">
+                    <p>
+                        <strong>Open People</strong> est un écosystème dynamique porté par une jeunesse passionnée. C'est un espace d'échanges, de découvertes et de création d'activités s'inscrivant au cœur d'une véritable synergie économique et culturelle.
+                    </p>
+                    <p>
+                        S'appuyant sur des partenariats stratégiques avec le monde de l'entreprise, l'initiative transforme les rassemblements en de véritables leviers de visibilité, de revenus et de networking pour la jeunesse.
+                    </p>
+                </div>
+
+                <div class="cascade-element delay-3 pt-4">
+                    <div class="inline-flex items-center text-xs tracking-wider uppercase text-gray-400 font-mono">
+                        <span class="w-8 h-[1px] bg-gray-300 inline-block mr-3"></span>
+                        Faites défiler pour tourner la page
+                    </div>
+                </div>
+            </div>
+
+            <!-- SVG Vectorisé Open People Infinity à droite (Fig. 01) -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="cascade-element delay-2 w-full max-w-md aspect-square bg-white page-border rounded-sm p-8 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+                    <div class="text-xs font-mono text-gray-400">FIG. 01 — INTRO</div>
+                    <div class="my-auto flex items-center justify-center p-4">
+                        <div class="w-48 h-48 sm:w-60 sm:h-60 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" class="w-full h-full max-h-full">
+                                <title>Open People Infinity — vectorisé</title>
+                                <desc>Reproduction vectorielle à deux couleurs, sans effets visuels ni arrière-plan.</desc>
+                                <g fill-rule="evenodd" clip-rule="evenodd">
+                                    <path fill="#CC1100" d="M326 747h-2l-2 3v2l-3 6v3l-1 1v3l-1 1-1 5-2 1-3-2-4 2-4 7v6l1 2 2 2h2l2-2h1l1 1v5l1 2 3 1 5-5v-1l4-5h1l3 4h6l8-4 9-7v-2l-7 5-8 4h-2l-1 1h-4l-2-2 1-3 1-1 6-1 6-6-2-3h-4l-2 1-7 7-1 3-10 11-2-1v-4l2-4 1-7 8-16v-3l1-1v-5l1-1v-2Zm-17 31v-1l2-2 2 1v1l-2 2Zm281-2-7 5-8 4h-2l-1 1h-4l-2-2 1-3 1-1 6-1 6-6-2-3h-4l-2 1-7 7-1 2v4l-2 2-2 4-2 2h-2l-1-1v-4l1-1 1-10 7-14 2-2h2l1-1h5l3 2v1l-2 2v2l1 1h1l4-4 2-1v-2l-1-1h-3l-1-1h-10l-1-1v-2l2-4v-4l-1-1h-2l-2 2-2 4-1 5-2 2-10 1-5 4 1 4 6-5h3l1-2h3l1 1-1 5-2 3 1 1-1 4-9 10-2 1-2-1v-3l4-8v-2l-2-1-3 1-1-1v-3l-1-1h-4l-1 1v3h2l1 2-3 4v1l-6 6-2-1v-3l2-4v-5l-4-1-1 1v4l-3 3v1l-6 6-3 1-1-1v-3l4-8v-2l-3-1-3 4v2l-1 1v4l-1 2-2 2-2 4-2 2h-2l-1-1v-4l1-1v-5l2-4v-4l2-2 4-9 2-2h2l1-1h5l1 2-6 3 1 4 6-5h3l1-2v-2l-2-1h-10l-1-1v-2l2-4v-4l-1-1h-2l-2 2-2 4-1 5-2 2-10 1-3 2v1h2l1-1h4l1-1h4l1 1-1 5-2 3 1 2-1 1v3l-1 2-8 7-2-1v-3l4-8v-2l-1-1h-1l-2 2h-2l-2-2h-3l-5 5v1l-6 5-8 4h-2l-1 1h-4l-2-2 1-3 1-1 6-1 6-6-2-3h-4l-2 1-6 6-6 1-1-1 1-4-2-2h-2l-5 5h-1l-1-2 2-3-2-2h-2l-1 4-2 4-2 2-13 7h-5l-1-1v-3l2-4 5-5 2 1v2l2-1v-3l-3-3h-3l-2 1-2 2-3 6v7l3 4h5l1-1h2l7-5h2l1 1v2l-1 1 3 3h1l4-8 3-3v-1l2-2h1l1 1v4l2 1 4-2 2 1 1 6 2 2h6l8-4 2-2h2l1 1v2l2 3h1l8-8 2 1v3l1 2h3l5-4h1l1 1v8l1 2 2 1 4-4v-1l3-4h1l3 3h3l6-6 1-2 2 1v5l3 3 3-1 6-6 2-4 2-1 1 1v6l3 4h3l6-6h1l1 1v8l1 2 2 1 7-8h1l2 2h6l11-6 4-4 2-1Zm-216-32-3 3-3 6v2l-2 3-1 5-1 1v3l-1 1v3l-1 1v3l-1 1v4l-1 1v11l1 2h3l7-8h1l1 2 2 1 8-8 2 1v3l1 2h3l5-4h1l4-4 1-3h-1l-7 7-4 2-1-1v-3l4-8v-2l-2-1-2 2h-2l-2-2h-3l-5 5-4 9-4 4v1l-4 4-2-1v-5l1-1v-5l1-1v-3l2-2h2l3-5v-2l2-3 1-5 1-1v-3l1-1v-3l1-1v-5Zm-21-533-3 2h-2l-1 1h-4l-1 1h-3l-1 1h-2l-1 1-8 2-5 3h-2l-6 3-2 2-5 2-5 4-6 3-3 3h-1l-21 21v1l-3 3v1l-6 8-1 3-2 2-4 8v2l-4 7-1 5-2 3v3l-1 1-1 6-1 1-1 9-1 1v6l-1 1v31l1 1 1 12 1 1v3l1 1v3l1 1v3l1 1 2 8 2 3v2l2 3v2l5 10 2 2 1 3 2 2 4 7 6 7v1l17 17h1l5 5h1l8 6 3 1 2 2 14 7h2l3 2h2l4 2h3l3 2h3l1 1h4l1 1h6l1 1h4l1 1h28l1-1h7l1-1h5l4-2h3l3-2 7-1 3-2h2l2-2h2l10-5 2-2 6-3 6-5 4-2 20-20v-6l-5-6-3-8-3-3-4-8v-2l-2-4-2-2-1-3-2-2-1-4-2-2-3-7-1-1h-3l-7 14-3 3v1l-16 16-18 10h-2l-3 2h-3l-1 1-8 1-1 1h-15l-4-2h-7l-1-1-8-2-2-2h-2l-4-2-2-2-5-2-6-5h-1l-13-13v-1l-3-3v-1l-4-5-5-10v-3l-1-1v-2l-2-4v-3l-2-4v-3l-1-1v-17l1-1v-5l2-4v-4l3-5v-2l2-3v-2l2-4 2-2 2-4 3-3 1-3 14-14 3-1 2-2h1l2-2 7-4h2l5-3h2l3-2h2l4-2h4l1-1h21l1 1h3l4 2h3l2 2h2l3 2h2l6 3 4 4 6 3 2 2v1h1l5 5v1h1l2 2 1 3 4 4 1 3 2 2 3 7h1l2 2 12 24 2 2v2l5 7v2l7 14 2 2 3 7 2 2 2 4v2l5 7 6 14 2 2 3-6 1-5 2-3 1-7 2-4 1-9 1-1v-7l1-1v-31l-1-1-1-12-1-1v-3l-1-1-1-7-1-1-2-8-2-3v-2l-3-5-1-5-4-8-2-2v-1l-2-2-4-7-8-9v-1l-12-12h-1l-5-5h-1l-3-3-4-2-3-3-22-11-5-1-6-3h-3l-1-1h-3l-1-1h-3l-1-1h-4l-1-1h-32l-1 1Z"/>
+                                    <path fill="#FFC300" d="m459 800-1 1 1 1Zm139-14 1 2 2 1 8-8h1l1 1v3l1 2h3l5-4h1l4-4 1-3h-1l-7 7-4 2-1-1v-3l4-8v-2l-2-1-2 2h-2l-2-2h-3l-5 5-3 6Zm161-20 1 2 3-3h1l2-2h3v-1h-7l-3 2Zm-39 0 1 2 3-3h1l2-2h3v-1h-7l-3 2Zm-56 0 1 2 3-3h1l2-2h3v-1h-7l-3 2Zm-55-6-2 2 6 6 2-2-4-5v-1Zm51 25 3 4h3l4-4h2l1 2 2 1 9-8 3-1 1 1v5l1 1h4l2 2h2l1 1v5l-1 1v12l2 3h3l3-6v-13l-3-3 1-2h2l8-4h2l1 1 1 4 2 2h3l4-4h2l1 2 2 1 9-8 3-1 1 1v5l1 1h3l5-4h1l1 1 1 4 2 2h3l10-11 1-3h-1l-9 10-3 1-1-1v-3l4-8v-2l-3-1-3 4v2l-6 6-3 1-1-2 3-6-1-2h-3l-4 2-5 4h-1l-1-2 4-4v-2l-2-3h-2l-5 10-6 6-2 1-2-1 1-6 3-5v-2l-2-1-2 1-4 8-9 4-1-2 6-11v-2l2-3 1-6 1-1v-10l-4-1-3 4v2l-1 1v2l-2 4v3l-2 4-1 7-8 8-2 1-2-1 2-4v-2l1-1-1-2h-3l-4 2-5 4h-1l-1-2 4-4v-2l-2-3h-2l-5 10-6 6-2 1-2-1v-3l4-8v-2l-3-1-3 4v2l-1 1Zm42 7 1 1v8l-1 1v2l-2 2h-1l-1-1v-2l1-1v-5l1-1v-3Zm-6-9 2-2 2 1v2l-1 1h-2Zm-34-36h-2v3l-2 4v2l1 1 2-2 2-4v-3Zm-14-3-3 3-3 6v2l-2 3-1 5-1 1v3l-1 1v3l-1 1v3l-1 1v4l-1 1v11l1 2h3l3-3v-1l3-3v-1l3-3v-1l4-5v-1l-3 3v1l-3 3v1l-4 4v1l-4 4h-1l-1-1v-5l1-1v-5l1-1v-3l2-2h2l3-5v-2l2-3v-2l2-4v-3l1-1v-3l1-1v-5ZM490 455v176l3 6 10 10 4 2h2l1 1h16l1-1h3l4-2 9-9 4-8V499l-3-3-5-2-2-2-3-1-2-2-4-2-4-4h-1l-4-4h-1l-25-25Zm101-244-4 2h-6l-1 1-5 1-5 3-8 2-6 3-5 4-4 1-2 3-4 1-9 8h-1l-10 10h-1l-2 4-4 4v6h1l2 2v2l3 4v2l3 3 2 4v2l4 7v2h1l2 2 1 4 3 6 3 3 2 4v2l3 5 4-2 1-3 2-2v-2l2-1 1-4 3-3 1-3 14-14h1l3-3h1l5-4h2l5-3h2l2-2h3l3-2h2l1-1h4l1-1h19l1 1h5l1 1h3l3 2h3l2 2 6 3h2l7 4 4 4h1l15 15 2 4 3 3 4 8v2l2 3v2l2 1v3l1 1v3l1 1v5l1 1v23l-1 1v4l-1 1-1 6-3 4v2l-2 3v2l-2 4-6 7-1 3-2 1-7 7v1l-2 1-6 6h-1l-5 4-4 2h-2v1l-3 2h-2l-6 3-12 1-2 2h-2l-1 1h-8l-1-1h-4l-2-2-10-1-3-2h-2l-1-1-4-1-1-2h-2l-2-2-3-1-3-3h-1l-17-17v-1l-3-4v-2h-1l-2-2-1-4-5-9v-2h-1l-2-2v-2l-4-8-2-2-6-13-2-2-3-8-3-2v-2l-3-5v-2l-3-6-3-3-3-6-1-4-2-1v-2l-3-6-3-4v-3l-3-3v-1h-2v1l6 12v2l1 1v2l2 4v3l1 1 1 7 1 1v4l1 1v6l1 1v11l1 1v12l-1 1v11l-1 1v6l-1 1v4l-1 1-1 7-1 1v2l-1 1v2l-1 1-2 8-3 6-2 1-12-24-2-2-6-13-2-2-9-19-2-2-10-21-2-2-4-9h-1v1l3 5v2l2 1v2l2 2 2 4v2l3 3 1 4 3 4v2l4 5 1 4 3 6 2 2 2 4v2l2 2 2 5 2 2 3 8 4 5 6 14 4 5 3 8 6 8v2h1l2 2v1l2 2v2l3 3v1l2 1 1 2 4 4h1l1 2 7 7h2l3 4h2l15 11 4 2 5 1 2 2 6 1 1 2h2l4 2h4l4 2h6l2 2h2l1 1h42l2-2h4l1-1h3l1-1h5l1-1h4l4-2h3l1-2 2-1h3l18-9 10-8h2l3-3h1l7-7v-1l2-1 4-4v-1l5-4 2-4 3-2v-2l2-1v-2l5-6 2-5 2-2 1-4 2-1v-3l2-3 1-5 2-3 1-7 2-1 1-10 1-1v-5l1-1v-11l1-1v-25l-1-1v-9l-2-4v-6l-1-1v-2l-2-2v-2l-1-1v-4l-3-6v-3l-2-4-2-2-3-6-1-4-3-2-1-4-7-8v-1l-2-2v-2h-1l-1-2h-1l-2-2v-1h-1l-1-2-2-1-2-2v-1h-1l-2-2v-1h-2l-10-9h-1l-4-3h-2l-2-3-4-1-7-5h-2l-5-3h-3l-8-4h-3l-1-1h-3l-1-1h-5l-1-1h-3l-1-1h-10l-1-1h-31l-1 1Z"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-[10px] font-mono text-gray-300 text-right">OPEN PEOPLE / INFINITY</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Chapitre II : Notre Philosophie -->
+    <section class="book-section py-20 px-6 md:px-16 lg:px-24 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <!-- Texte à gauche -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="cascade-element delay-1">
+                    <span class="text-xs font-mono uppercase tracking-widest text-gray-400">Chapitre II</span>
+                    <h2 class="font-serif-book text-3xl sm:text-4xl lg:text-5xl text-gray-900 font-normal leading-tight mt-2">
+                        Notre <span class="italic">Philosophie</span>
+                    </h2>
+                </div>
+
+                <div class="cascade-element delay-2 text-gray-600 text-base sm:text-lg leading-relaxed space-y-4 font-light">
+                    <p>
+                        Un système conçu <strong>par les jeunes et pour les jeunes</strong>, ancré dans la passion, la culture, <strong>l'esprit d'équipe</strong> et l'expérience du terrain pour donner une âme vivante au projet.
+                    </p>
+                    <p>
+                        L'initiative agit principalement à travers deux pôles : elle offre des solutions numériques adaptées aux exigences de l'événementiel, tout en concevant un univers interactif et divertissant porteur d'enjeux forts et d'une réelle valeur économique ajoutée.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cadre éditorial avec citation à droite (ancienlement en Fig. 01) -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="cascade-element delay-3 w-full max-w-md aspect-[4/5] bg-gray-50 page-border rounded-sm p-8 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+                    <div class="text-xs font-mono text-gray-400">FIG. 02 — PHILOSOPHIE</div>
+                    <div class="my-auto text-center py-12">
+                        <div class="w-20 h-20 mx-auto rounded-full border border-gray-200 flex items-center justify-center mb-6">
+                            <div class="w-10 h-10 rounded-full bg-gray-900 opacity-80"></div>
+                        </div>
+                        <p class="font-serif-book italic text-xl sm:text-2xl text-gray-800">« La jeunesse au centre de tout »</p>
+                        <p class="text-xs font-mono text-gray-400 uppercase tracking-widest mt-4">Sinergie & Esprit d'équipe</p>
+                    </div>
+                    <div class="text-[10px] font-mono text-gray-300 text-right">OPEN PEOPLE / VISION</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Chapitre III : Open Pass -->
+    <section class="book-section py-20 px-6 md:px-16 lg:px-24 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <!-- Texte à gauche -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="cascade-element delay-1">
+                    <span class="text-xs font-mono uppercase tracking-widest text-red-600">Chapitre III</span>
+                    <h2 class="font-serif-book text-3xl sm:text-4xl lg:text-5xl text-gray-900 font-normal leading-tight mt-2">
+                        La Solution <span class="italic">Open Pass</span>
+                    </h2>
+                </div>
+
+                <div class="cascade-element delay-2 text-gray-600 text-base sm:text-lg leading-relaxed space-y-4 font-light">
+                    <p>
+                        <strong>Open Pass</strong> est la solution numérique de billetterie portée par des jeunes pour transformer l'accès aux événements.
+                    </p>
+                    <p>
+                        Conçue pour simplifier la gestion des entrées, elle garantit aux organisateurs comme aux participants une expérience fluide, moderne et sécurisée, valorisant la culture du rassemblement.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Logo SVG Open Pass à droite -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="cascade-element delay-3 w-full max-w-md aspect-square bg-white page-border rounded-sm p-8 flex items-center justify-center shadow-sm">
+                    <div class="w-48 h-48 sm:w-64 sm:h-64 flex items-center justify-center">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" class="w-full h-full max-h-full">
+                            <path d="M0 0 C1.1 -0 2.2 -0.01 3.33 -0.01 C7.01 -0.03 10.68 -0.02 14.35 -0.01 C17.02 -0.01 19.68 -0.02 22.35 -0.02 C28.14 -0.04 33.93 -0.04 39.71 -0.03 C48.32 -0.02 56.93 -0.03 65.54 -0.04 C80.92 -0.06 96.29 -0.06 111.67 -0.06 C125.13 -0.05 138.58 -0.05 152.04 -0.06 C153.85 -0.06 155.65 -0.06 157.46 -0.06 C160.18 -0.06 162.9 -0.06 165.62 -0.07 C190.92 -0.08 216.21 -0.08 241.51 -0.07 C242.94 -0.07 242.94 -0.07 244.4 -0.07 C252.14 -0.07 259.88 -0.07 267.62 -0.06 C297.82 -0.05 328.02 -0.06 358.22 -0.09 C392.15 -0.11 426.09 -0.13 460.02 -0.12 C463.64 -0.12 467.26 -0.12 470.88 -0.12 C471.77 -0.12 472.66 -0.12 473.58 -0.12 C487.03 -0.11 500.47 -0.12 513.92 -0.13 C529.21 -0.15 544.51 -0.15 559.8 -0.13 C568.35 -0.12 576.91 -0.12 585.47 -0.14 C591.18 -0.15 596.9 -0.15 602.62 -0.13 C605.88 -0.12 609.13 -0.12 612.39 -0.14 C637.2 -0.23 637.2 -0.23 647.59 4.38 C649.33 5.14 649.33 5.14 651.1 5.92 C665.96 14.59 676.54 27.23 680.96 43.93 C682.28 51.13 681.96 58.44 681.89 65.74 C681.88 67.49 681.88 69.25 681.87 71 C681.86 75.59 681.83 80.17 681.8 84.76 C681.77 89.45 681.76 94.14 681.74 98.84 C681.71 108.02 681.66 117.2 681.59 126.38 C680.59 126.5 679.58 126.62 678.55 126.74 C677.21 126.91 675.86 127.08 674.52 127.24 C673.53 127.36 673.53 127.36 672.52 127.48 C661.24 128.91 651.73 133.83 642.59 140.38 C641.95 140.84 641.3 141.3 640.64 141.77 C627.18 152.31 619.62 169.98 617.13 186.45 C614.83 207.45 621.43 226.55 634.34 243.13 C645.38 255.15 660.66 262.36 676.78 263.92 C677.68 264 678.58 264.09 679.51 264.18 C680.54 264.28 680.54 264.28 681.59 264.38 C681.69 274.46 681.76 284.53 681.8 294.61 C681.82 299.29 681.85 303.97 681.9 308.65 C681.94 313.17 681.96 317.7 681.97 322.22 C681.98 323.94 682 325.66 682.02 327.38 C682.24 345.58 678.37 360.42 665.53 374.13 C653.47 385.58 639.72 390.88 623.1 390.74 C621.44 390.74 621.44 390.74 619.75 390.75 C616.08 390.75 612.41 390.74 608.74 390.72 C606.1 390.72 603.46 390.72 600.82 390.72 C595.14 390.72 589.47 390.71 583.8 390.7 C575.6 390.67 567.39 390.67 559.19 390.66 C545.88 390.65 532.57 390.64 519.26 390.61 C506.34 390.58 493.42 390.56 480.49 390.55 C479.69 390.54 478.9 390.54 478.07 390.54 C474.07 390.54 470.07 390.54 466.07 390.53 C432.91 390.5 399.75 390.44 366.59 390.38 C366.59 371.57 366.59 352.76 366.59 333.38 C370.47 334.93 373 336.22 376.34 338.51 C402.4 355.21 434.86 362.14 465.47 356.19 C467.86 355.64 470.23 355.04 472.59 354.38 C473.82 354.04 475.05 353.7 476.32 353.35 C496.11 347.29 512.76 336.67 527.59 322.38 C528.25 321.79 528.91 321.19 529.59 320.58 C544.78 306.47 553.05 285.86 558.59 266.38 C558.89 265.36 558.89 265.36 559.18 264.32 C567.4 233.98 559.9 201.11 544.59 174.38 C526.47 145.41 499.29 127.1 466.25 119.14 C434.7 112.57 402.48 119.09 375.59 136.38 C347.9 154.89 329.91 183.46 323.17 215.93 C321.95 223.24 321.45 230.4 321.47 237.8 C321.47 238.7 321.47 239.61 321.47 240.54 C321.46 243.55 321.46 246.55 321.47 249.56 C321.47 251.73 321.46 253.89 321.46 256.06 C321.46 260.71 321.46 265.36 321.46 270.02 C321.45 277.37 321.44 284.73 321.43 292.09 C321.42 293.33 321.42 294.58 321.42 295.86 C321.41 298.4 321.41 300.94 321.4 303.48 C321.37 320.61 321.34 337.73 321.34 354.85 C321.35 366.41 321.33 377.97 321.29 389.54 C321.27 395.65 321.26 401.77 321.28 407.88 C321.29 413.63 321.28 419.38 321.25 425.13 C321.24 427.23 321.24 429.34 321.25 431.45 C321.27 434.33 321.25 437.21 321.23 440.09 C321.24 440.92 321.25 441.75 321.26 442.61 C321.14 449.72 318.32 454.3 313.67 459.55 C302.27 469.4 289.3 471.09 274.59 470.38 C269.12 469.75 263.71 468.84 258.28 467.88 C256.7 467.61 255.12 467.34 253.54 467.06 C170.62 452.65 90.08 429.29 9.84 404.25 C3.36 402.23 -3.13 400.25 -9.63 398.29 C-11.83 397.63 -14.02 396.96 -16.22 396.3 C-18.12 395.72 -20.04 395.16 -21.95 394.6 C-35.51 390.46 -46.36 383.73 -53.61 371.33 C-57.56 363.77 -58.7 357.13 -58.63 348.68 C-58.63 347.26 -58.63 347.26 -58.63 345.81 C-58.63 342.7 -58.62 339.59 -58.6 336.48 C-58.6 334.31 -58.59 332.15 -58.59 329.98 C-58.59 324.3 -58.57 318.62 -58.54 312.93 C-58.52 307.13 -58.51 301.32 -58.5 295.52 C-58.48 284.14 -58.45 272.76 -58.41 261.38 C-57.6 261.06 -56.8 260.74 -55.97 260.41 C-54.37 259.76 -54.37 259.76 -52.74 259.1 C-51.16 258.46 -51.16 258.46 -49.56 257.82 C-44.71 255.61 -40.61 252.62 -36.41 249.38 C-35.37 248.64 -34.34 247.9 -33.28 247.13 C-19.79 234.23 -12.45 216.3 -11.41 197.86 C-11.39 178.82 -17.54 160.28 -30.6 146.06 C-38.82 138.42 -47.77 132.93 -58.41 129.38 C-58.5 118.91 -58.57 108.45 -58.61 97.98 C-58.63 93.12 -58.66 88.26 -58.71 83.4 C-58.75 78.69 -58.78 73.99 -58.79 69.29 C-58.79 67.51 -58.81 65.72 -58.83 63.94 C-59.04 45.5 -55.38 30.55 -42.34 16.63 C-30.31 5.21 -16.58 -0.11 0 0 Z M108.59 144.38 C107.72 145.1 106.85 145.82 105.95 146.56 C99.73 151.92 94.57 157.86 89.59 164.38 C88.99 165.16 88.38 165.94 87.76 166.74 C68.78 192.33 61.91 225.93 66.37 257.19 C71.71 288.53 88.72 317.17 114.66 335.76 C116.94 337.34 119.26 338.87 121.59 340.38 C122.56 341.02 123.52 341.65 124.51 342.31 C150.54 358.5 182.61 363.02 212.34 356.57 C231.53 351.77 249.68 343.53 264.59 330.38 C265.47 329.64 266.35 328.91 267.26 328.15 C279.58 317.51 288.29 304.82 295.59 290.38 C296.16 289.26 296.73 288.15 297.31 286.99 C310.63 258.35 310.75 225.09 300.28 195.6 C288.74 164.53 265.57 140.51 235.81 126.37 C193.81 107.59 143.9 115.1 108.59 144.38 Z " fill="#CC1100" transform="translate(228.4060344696045,344.61968326568604)"/>
+                            <path d="M0 0 C2.49 1.93 4.85 3.94 7.19 6.05 C7.87 6.64 8.56 7.23 9.26 7.84 C24.08 21.49 31.34 40.84 32.15 60.6 C32.6 82.18 23.95 101.67 9.17 117.16 C-5.86 131.5 -26.38 138.63 -46.91 138.3 C-66.92 137.02 -83.63 128.96 -97.81 115.05 C-98.5 114.4 -99.19 113.74 -99.9 113.07 C-113.38 99.27 -119.07 80.37 -119.06 61.46 C-118.74 41.04 -110.2 21.4 -95.89 6.88 C-70.12 -17.71 -29 -20.1 0 0 Z " fill="#CC1100" transform="translate(713.8125,519.94921875)"/>
+                            <path d="M0 0 C8.68 7.25 15.68 14.82 21.25 24.69 C21.94 25.85 21.94 25.85 22.65 27.04 C31.55 43.15 32.96 63.24 28.23 80.88 C24.81 92.14 19.16 102.95 11.25 111.69 C10.68 112.35 10.11 113.01 9.53 113.69 C-2.94 127.24 -21.96 135.94 -40.23 137.01 C-61.94 137.78 -80.78 130.89 -96.98 116.4 C-98.98 114.44 -100.73 112.57 -102.49 110.41 C-104.46 107.66 -104.46 107.66 -106.75 106.69 C-118.81 85.46 -123.95 63.65 -117.78 39.68 C-113.73 26.32 -106.56 15.51 -96.75 5.69 C-96.14 5.06 -95.53 4.44 -94.89 3.8 C-69.41 -20.33 -27.58 -20.44 0 0 Z " fill="#CC1100" transform="translate(459.75,521.3125)"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Chapitre IV : Open Play -->
+    <section class="book-section py-20 px-6 md:px-16 lg:px-24 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <!-- Texte à gauche -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="cascade-element delay-1">
+                    <span class="text-xs font-mono uppercase tracking-widest text-amber-500">Chapitre IV</span>
+                    <h2 class="font-serif-book text-3xl sm:text-4xl lg:text-5xl text-gray-900 font-normal leading-tight mt-2">
+                        La Solution <span class="italic">Open Play</span>
+                    </h2>
+                </div>
+
+                <div class="cascade-element delay-2 text-gray-600 text-base sm:text-lg leading-relaxed space-y-4 font-light">
+                    <p>
+                        <strong>Open Play</strong> est la solution numérique d'engagement de l'audience, propulsée par la passion et la créativité de la jeunesse.
+                    </p>
+                    <p>
+                        À travers les votes de concours, les animations et les jeux interactifs, Open Play met en avant l'élite de l'événementiel, tout en créant un univers captivant à forte valeur économique ajoutée.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Logo SVG Open Play à droite -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="cascade-element delay-3 w-full max-w-md aspect-square bg-white page-border rounded-sm p-8 flex items-center justify-center shadow-sm">
+                    <div class="w-48 h-48 sm:w-64 sm:h-64 flex items-center justify-center">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" class="w-full h-full max-h-full">
+                            <path d="M0 0 C9.87 4.94 19.67 9.89 29.38 15.12 C30.58 15.77 31.79 16.42 33 17.07 C36.07 18.73 39.14 20.38 42.22 22.04 C45.03 23.56 47.85 25.07 50.67 26.59 C58.19 30.63 65.7 34.68 73.21 38.73 C85.46 45.33 97.73 51.93 110 58.5 C124.42 66.22 138.81 73.97 153.21 81.73 C165.46 88.33 177.73 94.93 190 101.5 C204.42 109.22 218.81 116.97 233.21 124.73 C245.46 131.33 257.73 137.93 270 144.5 C282.27 151.07 294.53 157.66 306.78 164.27 C312.19 167.18 317.59 170.09 323 173 C325.13 174.15 327.27 175.3 329.4 176.45 C330.47 177.02 331.54 177.6 332.64 178.19 C342.42 183.46 352.21 188.73 362 194 C362 194.33 362 194.66 362 195 C361.34 195.11 360.68 195.23 360.01 195.35 C323.32 201.88 291.34 216.73 268.81 247.56 C260.77 259.09 254.04 271.94 249.5 285.25 C249.17 286.2 249.17 286.2 248.84 287.17 C244.37 301.38 243.56 315.72 243.61 330.49 C243.61 332.38 243.6 334.26 243.6 336.15 C243.58 341.22 243.59 346.29 243.6 351.37 C243.6 356.7 243.6 362.03 243.59 367.36 C243.59 376.31 243.59 385.25 243.61 394.19 C243.63 404.51 243.62 414.83 243.6 425.15 C243.59 434.04 243.59 442.93 243.6 451.83 C243.6 457.12 243.6 462.42 243.59 467.72 C243.58 472.69 243.59 477.67 243.61 482.64 C243.61 484.46 243.61 486.28 243.6 488.1 C243.52 501.32 243.52 501.32 247 514 C246.29 514.38 245.58 514.76 244.84 515.15 C222.55 527.09 200.27 539.05 178.04 551.1 C170.66 555.1 163.27 559.09 155.88 563.06 C147.9 567.35 139.94 571.66 132 576 C118.59 583.33 105.13 590.56 91.67 597.79 C79.59 604.29 67.51 610.8 55.48 617.38 C50.32 620.2 45.15 623 39.97 625.77 C39.37 626.09 38.76 626.41 38.14 626.74 C35.7 628.05 33.25 629.35 30.81 630.66 C22.98 634.83 15.18 639.05 7.53 643.56 C4.77 645.16 3.25 646 0 646 C0 571.75 0 497.5 0 421 C2.31 422.98 4.62 424.96 7 427 C35.63 450.04 68.71 460.92 105.56 457.78 C110.46 457.19 115.22 456.21 120 455 C121.27 454.68 122.54 454.37 123.86 454.04 C145.74 448.07 164.69 436.56 181 421 C181.65 420.43 182.3 419.85 182.97 419.26 C206.49 397.57 218.51 362.97 219.93 331.71 C221 294.03 206.62 260.24 181 233 C180.47 232.41 179.95 231.82 179.41 231.21 C158.09 208.26 125.02 196.42 94.32 195 C57.86 194.54 27.43 209.14 0 232 C0 155.44 0 78.88 0 0 Z " fill="#F5CB5C" transform="translate(275,205)"/>
+                            <path d="M0 0 C1.54 1.33 3.06 2.69 4.56 4.06 C5.31 4.71 6.05 5.37 6.82 6.04 C22.44 20.55 31.32 40.68 32.49 61.86 C33.21 82.79 27 103.69 13 119.5 C11.53 121.03 10.05 122.55 8.56 124.06 C8.02 124.67 7.48 125.28 6.93 125.91 C-4.47 138.46 -23.23 146.87 -40.05 148.28 C-65.04 149.35 -85.04 143.44 -103.8 126.54 C-104.67 125.72 -105.54 124.91 -106.44 124.06 C-107.6 122.97 -107.6 122.97 -108.79 121.86 C-110.44 120.06 -110.44 120.06 -110.44 118.06 C-111.43 118.06 -112.42 118.06 -113.44 118.06 C-126.42 95 -134.3 70.94 -127.47 44.36 C-120.08 20.84 -106.62 3.02 -84.75 -8.62 C-57.5 -21.92 -24.03 -18.61 0 0 Z " fill="#F5CB5C" transform="translate(414.4375,465.9375)"/>
+                            <path d="M0 0 C19.96 -0.84 40.6 5.87 55.55 19.2 C56.21 19.71 56.86 20.23 57.54 20.77 C71.86 32.32 82.47 51.92 84.55 70.2 C86.44 95.99 81.76 118.21 65.03 138.37 C52.05 153.14 33.22 163.18 13.55 165.2 C-9.17 166.58 -30.84 161.27 -48.41 146.13 C-64.03 132.06 -75.26 112.53 -76.58 91.19 C-77.48 65.99 -70.75 43.05 -53.45 24.2 C-38.84 9.39 -20.6 1.64 0 0 Z " fill="#F5CB5C" transform="translate(643.453125,448.8046875)"/>
+                            <path d="M0 0 C4.55 1.38 8.64 3.24 12.81 5.49 C13.45 5.83 14.1 6.18 14.76 6.53 C16.84 7.64 18.92 8.76 21 9.88 C22.46 10.65 23.91 11.43 25.37 12.21 C34.11 16.88 42.82 21.61 51.5 26.37 C64.92 33.72 78.47 40.84 92 48 C92 48.66 92 49.32 92 50 C91.46 50.3 90.92 50.6 90.36 50.9 C87.93 52.25 85.5 53.59 83.06 54.94 C82.21 55.41 81.36 55.87 80.49 56.36 C79.68 56.81 78.87 57.25 78.04 57.71 C77.29 58.13 76.54 58.54 75.77 58.97 C74.04 59.88 74.04 59.88 73 61 C82.4 65.95 82.4 65.95 92 71 C92 71.66 92 72.32 92 73 C91.33 73.36 90.66 70.72 89.96 74.09 C78.33 80.34 66.71 86.6 55.12 92.94 C47.13 97.31 39.13 101.64 31.1 105.94 C29.89 106.6 28.67 107.25 27.46 107.9 C20.36 111.71 13.23 115.45 6 119 C6.59 115.86 7.3 112.87 8.3 109.84 C19.89 73.91 18.26 38.78 1.32 4.81 C0 2 0 2 0 0 Z " fill="#F5CB5C" transform="translate(761,467)"/>
+                            <path d="M0 0 C3.63 2.31 7.26 4.62 11 7 C25.98 15.75 41.35 21.32 58 26 C54.67 28.68 51.08 30.66 47.31 32.62 C46.66 32.97 46.01 33.31 45.34 33.67 C43.23 34.78 41.11 35.89 39 37 C36.1 38.53 33.2 40.06 30.3 41.59 C29.59 41.97 28.88 42.35 28.14 42.73 C21.26 46.38 14.44 50.13 7.66 53.95 C2.21 57 2.21 57 0 57 C0 38.19 0 19.38 0 0 Z " fill="#F5CB5C" transform="translate(568,636)"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Chapitre V : Nos Pôles d'Action -->
+    <section id="poles-section" class="book-section py-20 px-6 md:px-16 lg:px-24 border-b border-gray-100 bg-white">
+        <div class="max-w-6xl mx-auto w-full space-y-12">
+            <div class="cascade-element delay-1 text-center max-w-2xl mx-auto">
+                <span class="text-xs font-mono uppercase tracking-widest text-gray-400">Chapitre V</span>
+                <h2 class="font-serif-book text-3xl sm:text-4xl lg:text-5xl text-gray-900 font-normal leading-tight mt-2">
+                    Nos <span class="italic">Pôles d'Expertise</span>
+                </h2>
+                <p class="text-sm font-light text-gray-500 mt-3">
+                    L'écosystème Open People s'articule autour de six piliers complémentaires animés par la passion et le savoir-faire de la jeunesse.
+                </p>
+            </div>
+
+            <!-- Grille des 6 Pôles -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-4">
+                
+                <!-- Partenariat -->
+                <div class="cascade-element delay-1 page-border p-8 rounded-sm bg-gray-50 hover:border-gray-300 transition-colors">
+                    <div class="text-xs font-mono text-gray-400 mb-4">01 / PÔLE</div>
+                    <h3 class="font-serif-book text-2xl text-gray-900 mb-3">Partenariat</h3>
+                    <p class="text-sm text-gray-600 font-light leading-relaxed">
+                        Gestion des relations entreprises, développement du réseau stratégique, sponsoring et création de synergies durables entre le monde économique et la jeunesse.
+                    </p>
+                </div>
+
+                <!-- Innovation -->
+                <div class="cascade-element delay-2 page-border p-8 rounded-sm bg-gray-50 hover:border-gray-300 transition-colors">
+                    <div class="text-xs font-mono text-gray-400 mb-4">02 / PÔLE</div>
+                    <h3 class="font-serif-book text-2xl text-gray-900 mb-3">Innovation</h3>
+                    <p class="text-sm text-gray-600 font-light leading-relaxed">
+                        Créativité conceptuelle, conception de formats événementiels inédits et recherche constante d'idées novatrices pour enrichir l'expérience participant.
+                    </p>
+                </div>
+
+                <!-- Technique -->
+                <div class="cascade-element delay-3 page-border p-8 rounded-sm bg-gray-50 hover:border-gray-300 transition-colors">
+                    <div class="text-xs font-mono text-gray-400 mb-4">03 / PÔLE</div>
+                    <h3 class="font-serif-book text-2xl text-gray-900 mb-3">Technique</h3>
+                    <p class="text-sm text-gray-600 font-light leading-relaxed">
+                        Développement logiciel et code des solutions, présence active sur le terrain, déploiement opérationnel et actions de sensibilisation auprès des publics.
+                    </p>
+                </div>
+
+                <!-- Marketing & Média -->
+                <div class="cascade-element delay-2 page-border p-8 rounded-sm bg-gray-50 hover:border-gray-300 transition-colors">
+                    <div class="text-xs font-mono text-gray-400 mb-4">04 / PÔLE</div>
+                    <h3 class="font-serif-book text-2xl text-gray-900 mb-3">Marketing & Média</h3>
+                    <p class="text-sm text-gray-600 font-light leading-relaxed">
+                        Stratégie globale de communication, animation des réseaux sociaux, création de contenus visuels et éditoriaux pour valoriser l'image de marque.
+                    </p>
+                </div>
+
+                <!-- Finance -->
+                <div class="cascade-element delay-3 page-border p-8 rounded-sm bg-gray-50 hover:border-gray-300 transition-colors">
+                    <div class="text-xs font-mono text-gray-400 mb-4">05 / PÔLE</div>
+                    <h3 class="font-serif-book text-2xl text-gray-900 mb-3">Finance</h3>
+                    <p class="text-sm text-gray-600 font-light leading-relaxed">
+                        Ingénierie financière, élaboration des offres commercialisables, gestion budgétaire, études de projets, capitalisation et rentabilité économique.
+                    </p>
+                </div>
+
+                <!-- Juridique -->
+                <div class="cascade-element delay-4 page-border p-8 rounded-sm bg-gray-50 hover:border-gray-300 transition-colors">
+                    <div class="text-xs font-mono text-gray-400 mb-4">06 / PÔLE</div>
+                    <h3 class="font-serif-book text-2xl text-gray-900 mb-3">Juridique</h3>
+                    <p class="text-sm text-gray-600 font-light leading-relaxed">
+                        Conformité réglementaire, gestion des contrats et conventions, gouvernance, protection de la propriété intellectuelle et encadrement légal des projets.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion / Épilogue -->
+    <footer class="py-24 px-6 md:px-16 text-center bg-white">
+        <div class="max-w-3xl mx-auto space-y-8">
+            <div class="cascade-element delay-1 font-serif-book italic text-2xl sm:text-3xl text-gray-800">
+                « Écrivons ensemble la suite de l'histoire. »
+            </div>
+
+            <!-- Bouton d'action unique -->
+            <div class="cascade-element delay-2 flex items-center justify-center pt-2">
+                <button onclick="openFormModal()" class="w-full sm:w-auto px-10 py-3.5 text-xs uppercase tracking-widest font-mono text-white bg-gray-900 border border-gray-900 hover:bg-gray-800 transition-all duration-300 rounded-xs shadow-sm">
+                    Rejoindre
+                </button>
+            </div>
+
+            <div class="cascade-element delay-3 text-xs font-mono tracking-widest text-gray-400 uppercase pt-6">
+                OPEN PEOPLE PROJECT — TOUS DROITS RÉSERVÉS
+            </div>
+        </div>
+    </footer>
+
+    <!-- Formulaire de candidature (Fenêtre modale) -->
+    <div id="join-modal" class="fixed inset-0 bg-black/40 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white page-border max-w-xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-10 relative shadow-xl rounded-sm">
+            
+            <!-- Bouton de fermeture -->
+            <button onclick="closeFormModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 font-mono text-xs uppercase">
+                ✕ Fermer
+            </button>
+
+            <div class="mb-8">
+                <span class="text-xs font-mono uppercase tracking-widest text-gray-400">Candidature</span>
+                <h3 class="font-serif-book text-3xl text-gray-900 font-normal mt-1">Rejoindre Open People</h3>
+                <p class="text-xs text-gray-500 font-light mt-2">
+                    Complétez ce formulaire. En cliquant sur "Envoyer", votre logiciel de messagerie s'ouvrira avec les réponses pré-remplies adressées à notre équipe (openeventcd).
+                </p>
+            </div>
+
+            <form onsubmit="submitApplication(event)" class="space-y-4 text-left font-light text-sm">
+                <div>
+                    <label class="block text-xs font-mono uppercase text-gray-500 mb-1" for="field-nom">Nom complet *</label>
+                    <input type="text" id="field-nom" required class="w-full px-3 py-2 border border-gray-200 rounded-xs focus:outline-none focus:border-gray-900 text-gray-900 text-sm" placeholder="Ex: Jean Dupont">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-mono uppercase text-gray-500 mb-1" for="field-age">Âge *</label>
+                        <input type="number" id="field-age" required min="12" max="99" class="w-full px-3 py-2 border border-gray-200 rounded-xs focus:outline-none focus:border-gray-900 text-gray-900 text-sm" placeholder="Ex: 22">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-mono uppercase text-gray-500 mb-1" for="field-nationalite">Nationalité *</label>
+                        <input type="text" id="field-nationalite" required class="w-full px-3 py-2 border border-gray-200 rounded-xs focus:outline-none focus:border-gray-900 text-gray-900 text-sm" placeholder="Ex: Congolaise">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-mono uppercase text-gray-500 mb-1" for="field-residence">Pays & Ville de résidence *</label>
+                        <input type="text" id="field-residence" required class="w-full px-3 py-2 border border-gray-200 rounded-xs focus:outline-none focus:border-gray-900 text-gray-900 text-sm" placeholder="Ex: RDC, Kinshasa">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-mono uppercase text-gray-500 mb-1" for="field-etudes">Niveau d'étude *</label>
+                        <input type="text" id="field-etudes" required class="w-full px-3 py-2 border border-gray-200 rounded-xs focus:outline-none focus:border-gray-900 text-gray-900 text-sm" placeholder="Ex: Licencié en Informatique">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-mono uppercase text-gray-500 mb-1" for="field-description">Description personnelle *</label>
+                    <textarea id="field-description" required rows="3" class="w-full px-3 py-2 border border-gray-200 rounded-xs focus:outline-none focus:border-gray-900 text-gray-900 text-sm" placeholder="Présentez-vous brièvement..."></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-mono uppercase text-gray-500 mb-1" for="field-aide">En quoi pensez-vous pouvoir nous aider ? *</label>
+                    <textarea id="field-aide" required rows="3" class="w-full px-3 py-2 border border-gray-200 rounded-xs focus:outline-none focus:border-gray-900 text-gray-900 text-sm" placeholder="Vos compétences, vos idées, le pôle visé..."></textarea>
+                </div>
+
+                <div class="pt-4 flex justify-end gap-3">
+                    <button type="button" onclick="closeFormModal()" class="px-5 py-2.5 text-xs uppercase font-mono text-gray-500 hover:text-gray-900">
+                        Annuler
+                    </button>
+                    <button type="submit" class="px-6 py-2.5 text-xs uppercase font-mono text-white bg-gray-900 hover:bg-gray-800 rounded-xs transition-colors">
+                        Envoyer le message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            /* IntersectionObserver pour déclencher les animations en cascade au défilement haut et bas */
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -10% 0px',
+                threshold: 0.15
+            };
+
+            const cascadeElements = document.querySelectorAll('.cascade-element');
+
+            const cascadeObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    } else {
+                        // Permet à l'animation de se re-déclencher au défilement vers le haut
+                        if (entry.boundingClientRect.top > 0) {
+                            entry.target.classList.remove('active');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            cascadeElements.forEach(el => {
+                cascadeObserver.observe(el);
+            });
+        });
+
+        /* Gestion de la fenêtre modale du formulaire */
+        function openFormModal() {
+            document.getElementById('join-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeFormModal() {
+            document.getElementById('join-modal').classList.hidden = true;
+            document.getElementById('join-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        /* Génération du message de candidature pré-rempli vers openeventcd */
+        function submitApplication(event) {
+            event.preventDefault();
+            
+            const nom = document.getElementById('field-nom').value;
+            const age = document.getElementById('field-age').value;
+            const nationalite = document.getElementById('field-nationalite').value;
+            const residence = document.getElementById('field-residence').value;
+            const etudes = document.getElementById('field-etudes').value;
+            const description = document.getElementById('field-description').value;
+            const aide = document.getElementById('field-aide').value;
+
+            const subject = encodeURIComponent(`Candidature Open People - ${nom}`);
+            const body = encodeURIComponent(
+                `Bonjour l'équipe Open People,\n\n` +
+                `Je souhaite rejoindre l'écosystème Open People. Voici mes informations :\n\n` +
+                `• Nom complet : ${nom}\n` +
+                `• Âge : ${age} ans\n` +
+                `• Nationalité : ${nationalite}\n` +
+                `• Pays & Ville de résidence : ${residence}\n` +
+                `• Niveau d'étude : ${etudes}\n\n` +
+                `• Description personnelle :\n${description}\n\n` +
+                `• En quoi je pense pouvoir vous aider :\n${aide}\n\n` +
+                `Dans l'attente de votre retour,\n${nom}`
+            );
+
+            // Redirection vers le client mail avec adresse openeventcd
+            window.location.href = `mailto:openeventcd@gmail.com?subject=${subject}&body=${body}`;
+
+            closeFormModal();
+        }
+    </script>
+</body>
+</html>
